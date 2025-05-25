@@ -25,36 +25,76 @@ Execute the necessary commands/batch file for the desired output.
 Create a directory named "my-folder"
 
 ## COMMAND AND OUTPUT
+       mkdir %userprofile%\Desktop\MyLab
+       ![image](https://github.com/user-attachments/assets/32c10ba4-bf3b-4009-b87f-3860c283f18f)
+
 
 Remove the directory "my-folder"
 
 ## COMMAND AND OUTPUT
+          cd %userprofile%\Desktop\MyLab
+
+       ![image](https://github.com/user-attachments/assets/a09e65f5-7b13-4771-9f04-b9297d8bfa6c)
+
 
 
 Create the file Rose.txt
 
 ## COMMAND AND OUTPUT
+     
+      type nul > MyFile.txt
+
+![image](https://github.com/user-attachments/assets/a22b5ef9-65d1-44a2-a0ba-c9495c00741c)
 
 
 Create the file hello.txt using echo and redirection
 
 ## COMMAND AND OUTPUT
+         dir %userprofile%\Desktop\MyLab
+
+![image](https://github.com/user-attachments/assets/362bc197-3716-47ba-aa14-9aa53c4df298)
+
 
 Copy the file hello.txt into the file hello1.txt
 
 ## COMMAND AND OUTPUT
 
+      mkdir %userprofile%\Desktop\Backup
+
+
+![image](https://github.com/user-attachments/assets/fb24375a-fc23-48da-b7f1-bddfdd4229ad)
+
+
 Remove the file hello1.txt
 
 ## COMMAND AND OUTPUT
+
+      copy MyFile.txt %userprofile%\Desktop\Backup
+
+![image](https://github.com/user-attachments/assets/9359ab65-0259-4562-b857-09b09f356199)
+
 
 List out the file hello1.txt in the current directory
 
 ## COMMAND AND OUTPUT
 
+          
+          copy MyFile.txt %userprofile%\Desktop\Backup
+
+
+![image](https://github.com/user-attachments/assets/f69c0860-29e4-4e82-b9f7-7c5e255aed85)
+
+
 List out all the associated file extensions 
 
 ## COMMAND AND OUTPUT
+
+            mkdir %userprofile%\Desktop\Documents
+
+move MyLab Documents
+
+![image](https://github.com/user-attachments/assets/461e9f57-fc56-4b71-9df7-a3507db33544)
+
 
 
 Compare the file hello.txt and rose.txt
@@ -62,60 +102,30 @@ Compare the file hello.txt and rose.txt
 ## COMMAND AND OUTPUT
 
 ## Exercise 2: Advanced Batch Scripting
-Create a batch file named on the desktop. The batch file need to have a variable assigned with a desired name for ex. name="John" and display as "Hello, John".
+## COMMAND
 
-
-
-
-
-## OUTPUT
-
-
-
-Create a batch file  on the desktop that checks whether a user-input number is odd or not. The script should:
-Prompt the user to enter a number.
-Calculate the remainder when the number is divided by 2.
-Display whether the number is odd or not.
-Ask the user if they want to check another number.
-Repeat the process if the user enters Y, and exit with a thank-you message if the user enters N.
-Handle invalid inputs for the continuation prompt (Y/N) gracefully.
+          @echo off
+          mkdir %userprofile%\Desktop\DocBackup
+          copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+          echo Backup completed successfully!
 
 
 
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/a3e5d48c-434b-423a-9ba8-7dc7b0ade210)
 
-
-
-
-Write a batch file that uses a FOR loop to iterate over a sequence of numbers (1 to 5) and displays each number with the label Number:. The output should pause at the end.
-
-
-
-
-## OUTPUT
-
-
-
-
-Write a batch script to check whether a file named sample.txt exists in the current directory. If the file exists, display the message sample.txt exists. Otherwise, display sample.txt does not exist. Pause the script at the end to view the result.
-
-Instructions:
-Use the IF EXIST conditional statement.
-Make sure the script works for files located in the same directory as the batch file.
-Use pause to keep the command window open after displaying the message.
-Expected Output (if the file exists):
-
-## OUTPUT
-
-
-Write a batch script that displays a simple menu with three options:
-Say Hello – Displays the message Hello, World!
-Create a File – Creates a file named newfile.txt with the content This is a new file
-Exit – Exits the script with a goodbye message
-The script should repeatedly display the menu until the user chooses to exit. Use goto statements to handle menu navigation.
+## COMMAND
+          @echo off
+          mkdir %userprofile%\Desktop\DocBackup
+          copy %userprofile%\Documents\*.docx %userprofile%\Desktop\DocBackup
+          del %userprofile%\Documents\*.docx
+          echo Backup and deletion completed successfully!
 
 
 ## OUTPUT
+
+![image](https://github.com/user-attachments/assets/72f2c878-b10e-4b1e-a5a3-d22e6e559bed)
+
 
 
 
